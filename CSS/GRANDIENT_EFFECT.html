@@ -1,0 +1,122 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRANDIENT EFFECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .loginform {
+            background: radial-gradient(rgb(143, 31, 124), rgb(87, 37, 143), rgb(226, 9, 197));
+            background-size: cover;
+            padding: 155px 0px;
+
+        }
+
+        .login {
+            border: 8px solid black;
+            padding: 15px;
+            width: 300px;
+            margin: 150px auto;
+        }
+
+        .login h1 {
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        h1::after {
+            content: "";
+            height: 2px;
+            width: 35px;
+            display: inline-block;
+            margin: 5px 2px;
+            background-color: blue;
+        }
+
+        h1::before {
+            content: "";
+            height: 2px;
+            width: 35px;
+            display: inline-block;
+            margin: 5px 2px;
+            background-color: blue;
+        }
+
+        .login input {
+            margin-left: 39px;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 25px;
+            width: 180px;
+            outline: none;
+            letter-spacing: 1.5s;
+            padding-left: 5px;
+            padding-right: 25px;
+            font-size: 10px;
+
+
+        }
+
+        .row {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .login button {
+            height: 30px;
+            width: 70px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-left: 150px;
+            background-color: rgb(93, 93, 182);
+            color: white;
+
+        }
+
+        span {
+            padding-left: 5px;
+            font-size: 13px;
+            color: rgb(14, 7, 7);
+        }
+
+        .loginform .login button span {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="loginform">
+        <div class="login">
+            <h1>SIGN IN</h1>
+            <form action="">
+                <div class="row">
+                    <input type="text" placeholder="ENTER EMAIL"><span class="fa-solid fa-user"></span>
+                </div>
+                <div class="row">
+                    <input type="password" placeholder="ENTER PASSWORD"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588M5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                        <path
+                            d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z" />
+                    </svg>
+                </div>
+            </form>
+            <div class="row">
+                <button>Log In <span class="fa-solid fa-angles-right"></span></button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
